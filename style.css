@@ -1,0 +1,93 @@
+html {
+    text-align: center;
+    font-family: monospace;
+    background-image: url(petra.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#header {
+    font-weight: bold;
+    font-size: 69px;
+    background-color: dodgerblue;
+    border: solid black;
+    padding: 25px;
+}
+
+h1 {
+    border: solid black;
+    background-color: #217C7E;
+    width: 300px;
+    margin: auto;
+}
+
+#container {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.choice {
+    display: inline-block;
+    border-radius: 69%;
+    max-width: 300px;
+    border: solid black;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    border: solid yellow;
+}
+
+#rock {
+    content: url(rock.jpg);
+}
+
+#paper{
+    content: url(paper.jpg);
+}
+
+#scissors {
+    content: url(scissors.png);
+}
+
+h2 {
+    border: solid black;
+    background-color: #FF8F1F;
+    width: 250px;
+    margin: auto;
+}
+
+.scorebox {
+    display: inline-block;
+    border: solid black;
+    height: 42px;
+    width: 42px;
+    background-color: #eeeeee;
+    
+}
+
+.score {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#result {
+    margin: auto;
+    border: solid black;
+    max-width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,0.4);
+    padding-bottom: 1em;
+}
+
+.win {
+    content: url(wisely.jpg);
+}
+
+.lose {
+    content: url(poorly.jpg);
+}
+
+.draw {
+    content: url(draw.jpg);
+}
