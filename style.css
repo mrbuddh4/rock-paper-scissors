@@ -12,6 +12,8 @@ html {
     background-color: dodgerblue;
     border: solid black;
     padding: 25px;
+    width: 900px;
+    margin: auto;
 }
 
 h1 {
@@ -53,7 +55,7 @@ h1 {
 h2 {
     border: solid black;
     background-color: #FF8F1F;
-    width: 250px;
+    width: 150px;
     margin: auto;
 }
 
@@ -63,12 +65,20 @@ h2 {
     height: 42px;
     width: 42px;
     background-color: #eeeeee;
-    
+    margin: auto;
 }
 
 .score {
     font-size: 35px;
     font-weight: bold;
+}
+
+.scoreId {
+    display: inline-block;
+    border: solid medium black;
+    background-color: #1fffff;
+    padding: 5px;
+    margin: auto;
 }
 
 #result {
@@ -90,4 +100,17 @@ h2 {
 
 .draw {
     content: url(draw.jpg);
+}
+
+.playerWin {
+    content: url(win.jpg);
+}
+
+.computerWin {
+    content: url(lose.jpg);
+}
+
+.result:hover {
+    transform: scale(1.1);
+    border: solid yellow !important;
 }
