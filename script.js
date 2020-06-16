@@ -27,9 +27,7 @@ scissors.addEventListener('click', function() {
 
 
 function resetResult() {
-    result.classList.remove('win');
-    result.classList.remove('lose');
-    result.classList.remove('draw');
+    result.classList.remove('win', 'lose', 'draw', 'playerWin', 'computerWin', 'result');
 }
   
 function computerPlay() {
@@ -60,15 +58,15 @@ function playRound(playerSelection, computerSelection) {
 function lose() {
     result.classList.add('lose');
     computerScore++;
-    userScore.innerHTML = playerScore;
-	compScore.innerHTML = computerScore;
+    userScore.innerText = playerScore;
+	compScore.innerText = computerScore;
 }
 
 function win() {
     result.classList.add('win');
     playerScore++;
-    userScore.innerHTML = playerScore;
-	compScore.innerHTML = computerScore;
+    userScore.innerText = playerScore;
+	compScore.innerText = computerScore;
 }
 
 function draw() {
@@ -90,5 +88,10 @@ function endGame() {
 }
 
 function resetGame() {
-    window.location.reload();
+    //window.location.reload();
+    resetResult();
+    playerScore = 0;
+    computerScore = 0;
+    userScore.innerText = playerScore;
+	compScore.innerText = computerScore;
 }
